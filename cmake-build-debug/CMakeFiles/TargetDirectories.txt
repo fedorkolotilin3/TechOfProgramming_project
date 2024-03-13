@@ -1,0 +1,8 @@
+/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/cmake-build-debug/CMakeFiles/tp_project_fiodorkolotilin.dir
+/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/cmake-build-debug/CMakeFiles/sources_lib.dir
+/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/cmake-build-debug/CMakeFiles/tp_project_fiodorkolotilin_autogen_timestamp_deps.dir
+/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/cmake-build-debug/CMakeFiles/tp_project_fiodorkolotilin_autogen.dir
+/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/cmake-build-debug/CMakeFiles/sources_lib_autogen_timestamp_deps.dir
+/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/cmake-build-debug/CMakeFiles/sources_lib_autogen.dir
