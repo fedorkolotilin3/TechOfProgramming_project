@@ -74,6 +74,10 @@
 			"includes" : 
 			[
 				{
+					"backtrace" : 0,
+					"path" : "/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/cmake-build-debug/tp_project_fiodorkolotilin_autogen/include"
+				},
+				{
 					"backtrace" : 3,
 					"path" : "/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/headers"
 				},
@@ -112,11 +116,6 @@
 				{
 					"backtrace" : 3,
 					"path" : "/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/UILogic/Game"
-				},
-				{
-					"backtrace" : 0,
-					"isSystem" : true,
-					"path" : "/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/cmake-build-debug/tp_project_fiodorkolotilin_autogen/include"
 				},
 				{
 					"backtrace" : 2,

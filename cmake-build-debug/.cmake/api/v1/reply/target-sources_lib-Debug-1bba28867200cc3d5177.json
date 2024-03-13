@@ -49,6 +49,10 @@
 			"includes" : 
 			[
 				{
+					"backtrace" : 0,
+					"path" : "/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/cmake-build-debug/sources_lib_autogen/include"
+				},
+				{
 					"backtrace" : 2,
 					"path" : "/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/headers"
 				},
@@ -87,11 +91,6 @@
 				{
 					"backtrace" : 2,
 					"path" : "/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/UILogic/Game"
-				},
-				{
-					"backtrace" : 0,
-					"isSystem" : true,
-					"path" : "/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/cmake-build-debug/sources_lib_autogen/include"
 				}
 			],
 			"language" : "CXX",

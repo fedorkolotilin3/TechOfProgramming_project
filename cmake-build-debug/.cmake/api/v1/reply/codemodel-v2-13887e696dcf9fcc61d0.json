@@ -9,7 +9,7 @@
 					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
 					"minimumCMakeVersion" : 
 					{
-						"string" : "3.27"
+						"string" : "3.22"
 					},
 					"projectIndex" : 0,
 					"source" : ".",
@@ -49,7 +49,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "sources_lib::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-sources_lib-Debug-a44ea359204eb5f738d9.json",
+					"jsonFile" : "target-sources_lib-Debug-1bba28867200cc3d5177.json",
 					"name" : "sources_lib",
 					"projectIndex" : 0
 				},
@@ -70,7 +70,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "tp_project_fiodorkolotilin::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-tp_project_fiodorkolotilin-Debug-28ea1ab5255a4cdce73a.json",
+					"jsonFile" : "target-tp_project_fiodorkolotilin-Debug-37dee0bee6653b442c2b.json",
 					"name" : "tp_project_fiodorkolotilin",
 					"projectIndex" : 0
 				},
