@@ -1,0 +1,105 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.27"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "tp_project_fiodorkolotilin",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "sources_lib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sources_lib-Debug-a44ea359204eb5f738d9.json",
+					"name" : "sources_lib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sources_lib_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sources_lib_autogen-Debug-80e0c755c4068bb8bd19.json",
+					"name" : "sources_lib_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sources_lib_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sources_lib_autogen_timestamp_deps-Debug-d1063dd750b3abbadd84.json",
+					"name" : "sources_lib_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tp_project_fiodorkolotilin::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tp_project_fiodorkolotilin-Debug-28ea1ab5255a4cdce73a.json",
+					"name" : "tp_project_fiodorkolotilin",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tp_project_fiodorkolotilin_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tp_project_fiodorkolotilin_autogen-Debug-4cea82fd1e8354af1870.json",
+					"name" : "tp_project_fiodorkolotilin_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tp_project_fiodorkolotilin_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tp_project_fiodorkolotilin_autogen_timestamp_deps-Debug-9bc29c61ced04dc74eb4.json",
+					"name" : "tp_project_fiodorkolotilin_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/cmake-build-debug",
+		"source" : "/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}
