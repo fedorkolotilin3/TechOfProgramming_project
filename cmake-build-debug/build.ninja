@@ -47,7 +47,7 @@ cmake_ninja_workdir = /home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin
 #############################################
 # Order-only phony target for tp_project_fiodorkolotilin
 
-build cmake_object_order_depends_target_tp_project_fiodorkolotilin: phony || cmake_object_order_depends_target_sources_lib tp_project_fiodorkolotilin_autogen tp_project_fiodorkolotilin_autogen/mocs_compilation.cpp tp_project_fiodorkolotilin_autogen/timestamp tp_project_fiodorkolotilin_autogen_timestamp_deps
+build cmake_object_order_depends_target_tp_project_fiodorkolotilin: phony || cmake_object_order_depends_target_headers_lib cmake_object_order_depends_target_sources_lib tp_project_fiodorkolotilin_autogen tp_project_fiodorkolotilin_autogen/mocs_compilation.cpp tp_project_fiodorkolotilin_autogen/timestamp tp_project_fiodorkolotilin_autogen_timestamp_deps
 
 build CMakeFiles/tp_project_fiodorkolotilin.dir/tp_project_fiodorkolotilin_autogen/mocs_compilation.cpp.o: CXX_COMPILER__tp_project_fiodorkolotilin_unscanned_Debug /home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/cmake-build-debug/tp_project_fiodorkolotilin_autogen/mocs_compilation.cpp || cmake_object_order_depends_target_tp_project_fiodorkolotilin
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
@@ -65,6 +65,70 @@ build CMakeFiles/tp_project_fiodorkolotilin.dir/main.cpp.o: CXX_COMPILER__tp_pro
   OBJECT_DIR = CMakeFiles/tp_project_fiodorkolotilin.dir
   OBJECT_FILE_DIR = CMakeFiles/tp_project_fiodorkolotilin.dir
 
+build CMakeFiles/tp_project_fiodorkolotilin.dir/sources/UIClasses/View.cpp.o: CXX_COMPILER__tp_project_fiodorkolotilin_unscanned_Debug /home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/UIClasses/View.cpp || cmake_object_order_depends_target_tp_project_fiodorkolotilin
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = CMakeFiles/tp_project_fiodorkolotilin.dir/sources/UIClasses/View.cpp.o.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always -fPIC
+  INCLUDES = -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/cmake-build-debug/tp_project_fiodorkolotilin_autogen/include -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/headers -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/headers/UIClasses -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/headers/Model -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/headers/UILogic/Hub -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/headers/UILogic/Game -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/UIClasses -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/Model -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/UILogic/Hub -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/UILogic/Game -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets
+  OBJECT_DIR = CMakeFiles/tp_project_fiodorkolotilin.dir
+  OBJECT_FILE_DIR = CMakeFiles/tp_project_fiodorkolotilin.dir/sources/UIClasses
+
+build CMakeFiles/tp_project_fiodorkolotilin.dir/sources/UIClasses/Widget.cpp.o: CXX_COMPILER__tp_project_fiodorkolotilin_unscanned_Debug /home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/UIClasses/Widget.cpp || cmake_object_order_depends_target_tp_project_fiodorkolotilin
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = CMakeFiles/tp_project_fiodorkolotilin.dir/sources/UIClasses/Widget.cpp.o.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always -fPIC
+  INCLUDES = -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/cmake-build-debug/tp_project_fiodorkolotilin_autogen/include -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/headers -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/headers/UIClasses -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/headers/Model -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/headers/UILogic/Hub -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/headers/UILogic/Game -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/UIClasses -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/Model -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/UILogic/Hub -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/UILogic/Game -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets
+  OBJECT_DIR = CMakeFiles/tp_project_fiodorkolotilin.dir
+  OBJECT_FILE_DIR = CMakeFiles/tp_project_fiodorkolotilin.dir/sources/UIClasses
+
+build CMakeFiles/tp_project_fiodorkolotilin.dir/sources/UIClasses/TextWidget.cpp.o: CXX_COMPILER__tp_project_fiodorkolotilin_unscanned_Debug /home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/UIClasses/TextWidget.cpp || cmake_object_order_depends_target_tp_project_fiodorkolotilin
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = CMakeFiles/tp_project_fiodorkolotilin.dir/sources/UIClasses/TextWidget.cpp.o.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always -fPIC
+  INCLUDES = -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/cmake-build-debug/tp_project_fiodorkolotilin_autogen/include -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/headers -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/headers/UIClasses -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/headers/Model -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/headers/UILogic/Hub -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/headers/UILogic/Game -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/UIClasses -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/Model -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/UILogic/Hub -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/UILogic/Game -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets
+  OBJECT_DIR = CMakeFiles/tp_project_fiodorkolotilin.dir
+  OBJECT_FILE_DIR = CMakeFiles/tp_project_fiodorkolotilin.dir/sources/UIClasses
+
+build CMakeFiles/tp_project_fiodorkolotilin.dir/sources/UIClasses/Button.cpp.o: CXX_COMPILER__tp_project_fiodorkolotilin_unscanned_Debug /home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/UIClasses/Button.cpp || cmake_object_order_depends_target_tp_project_fiodorkolotilin
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = CMakeFiles/tp_project_fiodorkolotilin.dir/sources/UIClasses/Button.cpp.o.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always -fPIC
+  INCLUDES = -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/cmake-build-debug/tp_project_fiodorkolotilin_autogen/include -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/headers -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/headers/UIClasses -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/headers/Model -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/headers/UILogic/Hub -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/headers/UILogic/Game -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/UIClasses -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/Model -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/UILogic/Hub -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/UILogic/Game -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets
+  OBJECT_DIR = CMakeFiles/tp_project_fiodorkolotilin.dir
+  OBJECT_FILE_DIR = CMakeFiles/tp_project_fiodorkolotilin.dir/sources/UIClasses
+
+build CMakeFiles/tp_project_fiodorkolotilin.dir/sources/UIClasses/Activity.cpp.o: CXX_COMPILER__tp_project_fiodorkolotilin_unscanned_Debug /home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/UIClasses/Activity.cpp || cmake_object_order_depends_target_tp_project_fiodorkolotilin
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = CMakeFiles/tp_project_fiodorkolotilin.dir/sources/UIClasses/Activity.cpp.o.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always -fPIC
+  INCLUDES = -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/cmake-build-debug/tp_project_fiodorkolotilin_autogen/include -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/headers -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/headers/UIClasses -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/headers/Model -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/headers/UILogic/Hub -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/headers/UILogic/Game -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/UIClasses -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/Model -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/UILogic/Hub -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/UILogic/Game -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets
+  OBJECT_DIR = CMakeFiles/tp_project_fiodorkolotilin.dir
+  OBJECT_FILE_DIR = CMakeFiles/tp_project_fiodorkolotilin.dir/sources/UIClasses
+
+build CMakeFiles/tp_project_fiodorkolotilin.dir/sources/UILogic/Hub/MainMenu.cpp.o: CXX_COMPILER__tp_project_fiodorkolotilin_unscanned_Debug /home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/UILogic/Hub/MainMenu.cpp || cmake_object_order_depends_target_tp_project_fiodorkolotilin
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = CMakeFiles/tp_project_fiodorkolotilin.dir/sources/UILogic/Hub/MainMenu.cpp.o.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always -fPIC
+  INCLUDES = -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/cmake-build-debug/tp_project_fiodorkolotilin_autogen/include -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/headers -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/headers/UIClasses -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/headers/Model -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/headers/UILogic/Hub -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/headers/UILogic/Game -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/UIClasses -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/Model -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/UILogic/Hub -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/UILogic/Game -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets
+  OBJECT_DIR = CMakeFiles/tp_project_fiodorkolotilin.dir
+  OBJECT_FILE_DIR = CMakeFiles/tp_project_fiodorkolotilin.dir/sources/UILogic/Hub
+
+build CMakeFiles/tp_project_fiodorkolotilin.dir/sources/UILogic/Hub/StartActivity.cpp.o: CXX_COMPILER__tp_project_fiodorkolotilin_unscanned_Debug /home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/UILogic/Hub/StartActivity.cpp || cmake_object_order_depends_target_tp_project_fiodorkolotilin
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = CMakeFiles/tp_project_fiodorkolotilin.dir/sources/UILogic/Hub/StartActivity.cpp.o.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always -fPIC
+  INCLUDES = -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/cmake-build-debug/tp_project_fiodorkolotilin_autogen/include -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/headers -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/headers/UIClasses -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/headers/Model -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/headers/UILogic/Hub -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/headers/UILogic/Game -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/UIClasses -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/Model -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/UILogic/Hub -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/UILogic/Game -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets
+  OBJECT_DIR = CMakeFiles/tp_project_fiodorkolotilin.dir
+  OBJECT_FILE_DIR = CMakeFiles/tp_project_fiodorkolotilin.dir/sources/UILogic/Hub
+
+build CMakeFiles/tp_project_fiodorkolotilin.dir/sources/UILogic/Hub/PlayMenu.cpp.o: CXX_COMPILER__tp_project_fiodorkolotilin_unscanned_Debug /home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/UILogic/Hub/PlayMenu.cpp || cmake_object_order_depends_target_tp_project_fiodorkolotilin
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = CMakeFiles/tp_project_fiodorkolotilin.dir/sources/UILogic/Hub/PlayMenu.cpp.o.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always -fPIC
+  INCLUDES = -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/cmake-build-debug/tp_project_fiodorkolotilin_autogen/include -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/headers -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/headers/UIClasses -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/headers/Model -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/headers/UILogic/Hub -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/headers/UILogic/Game -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/UIClasses -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/Model -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/UILogic/Hub -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/UILogic/Game -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets
+  OBJECT_DIR = CMakeFiles/tp_project_fiodorkolotilin.dir
+  OBJECT_FILE_DIR = CMakeFiles/tp_project_fiodorkolotilin.dir/sources/UILogic/Hub
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target tp_project_fiodorkolotilin
@@ -73,9 +137,9 @@ build CMakeFiles/tp_project_fiodorkolotilin.dir/main.cpp.o: CXX_COMPILER__tp_pro
 #############################################
 # Link the executable tp_project_fiodorkolotilin
 
-build tp_project_fiodorkolotilin: CXX_EXECUTABLE_LINKER__tp_project_fiodorkolotilin_Debug CMakeFiles/tp_project_fiodorkolotilin.dir/tp_project_fiodorkolotilin_autogen/mocs_compilation.cpp.o CMakeFiles/tp_project_fiodorkolotilin.dir/main.cpp.o | /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.15.3 libsources_lib.a /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.15.3 /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.3 || libsources_lib.a tp_project_fiodorkolotilin_autogen tp_project_fiodorkolotilin_autogen_timestamp_deps
+build tp_project_fiodorkolotilin: CXX_EXECUTABLE_LINKER__tp_project_fiodorkolotilin_Debug CMakeFiles/tp_project_fiodorkolotilin.dir/tp_project_fiodorkolotilin_autogen/mocs_compilation.cpp.o CMakeFiles/tp_project_fiodorkolotilin.dir/main.cpp.o CMakeFiles/tp_project_fiodorkolotilin.dir/sources/UIClasses/View.cpp.o CMakeFiles/tp_project_fiodorkolotilin.dir/sources/UIClasses/Widget.cpp.o CMakeFiles/tp_project_fiodorkolotilin.dir/sources/UIClasses/TextWidget.cpp.o CMakeFiles/tp_project_fiodorkolotilin.dir/sources/UIClasses/Button.cpp.o CMakeFiles/tp_project_fiodorkolotilin.dir/sources/UIClasses/Activity.cpp.o CMakeFiles/tp_project_fiodorkolotilin.dir/sources/UILogic/Hub/MainMenu.cpp.o CMakeFiles/tp_project_fiodorkolotilin.dir/sources/UILogic/Hub/StartActivity.cpp.o CMakeFiles/tp_project_fiodorkolotilin.dir/sources/UILogic/Hub/PlayMenu.cpp.o | libsources_lib.a libheaders_lib.a /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.15.3 /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.15.3 /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.3 || libheaders_lib.a libsources_lib.a tp_project_fiodorkolotilin_autogen tp_project_fiodorkolotilin_autogen_timestamp_deps
   FLAGS = -g
-  LINK_LIBRARIES = /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.15.3  libsources_lib.a  /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.15.3  /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.3
+  LINK_LIBRARIES = libsources_lib.a  libheaders_lib.a  /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.15.3  /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.15.3  /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.3
   OBJECT_DIR = CMakeFiles/tp_project_fiodorkolotilin.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -114,6 +178,39 @@ build libsources_lib.a: CXX_STATIC_LIBRARY_LINKER__sources_lib_Debug CMakeFiles/
   TARGET_FILE = libsources_lib.a
   TARGET_PDB = sources_lib.a.dbg
 
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target headers_lib
+
+
+#############################################
+# Order-only phony target for headers_lib
+
+build cmake_object_order_depends_target_headers_lib: phony || headers_lib_autogen headers_lib_autogen/mocs_compilation.cpp headers_lib_autogen/timestamp headers_lib_autogen_timestamp_deps
+
+build CMakeFiles/headers_lib.dir/headers_lib_autogen/mocs_compilation.cpp.o: CXX_COMPILER__headers_lib_unscanned_Debug /home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/cmake-build-debug/headers_lib_autogen/mocs_compilation.cpp || cmake_object_order_depends_target_headers_lib
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = CMakeFiles/headers_lib.dir/headers_lib_autogen/mocs_compilation.cpp.o.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always -fPIC
+  INCLUDES = -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/cmake-build-debug/headers_lib_autogen/include -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/headers -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/headers/UIClasses -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/headers/Model -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/headers/UILogic/Hub -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/headers/UILogic/Game -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/UIClasses -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/Model -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/UILogic/Hub -I/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/UILogic/Game -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets
+  OBJECT_DIR = CMakeFiles/headers_lib.dir
+  OBJECT_FILE_DIR = CMakeFiles/headers_lib.dir/headers_lib_autogen
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target headers_lib
+
+
+#############################################
+# Link the static library libheaders_lib.a
+
+build libheaders_lib.a: CXX_STATIC_LIBRARY_LINKER__headers_lib_Debug CMakeFiles/headers_lib.dir/headers_lib_autogen/mocs_compilation.cpp.o || headers_lib_autogen headers_lib_autogen_timestamp_deps /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.15.3 /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.15.3 /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.3
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = CMakeFiles/headers_lib.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = libheaders_lib.a
+  TARGET_PDB = headers_lib.a.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -141,7 +238,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Utility command for tp_project_fiodorkolotilin_autogen_timestamp_deps
 
-build tp_project_fiodorkolotilin_autogen_timestamp_deps: phony CMakeFiles/tp_project_fiodorkolotilin_autogen_timestamp_deps libsources_lib.a
+build tp_project_fiodorkolotilin_autogen_timestamp_deps: phony CMakeFiles/tp_project_fiodorkolotilin_autogen_timestamp_deps libheaders_lib.a libsources_lib.a
 
 
 #############################################
@@ -163,9 +260,21 @@ build sources_lib_autogen: phony CMakeFiles/sources_lib_autogen sources_lib_auto
 
 
 #############################################
+# Utility command for headers_lib_autogen_timestamp_deps
+
+build headers_lib_autogen_timestamp_deps: phony CMakeFiles/headers_lib_autogen_timestamp_deps
+
+
+#############################################
+# Utility command for headers_lib_autogen
+
+build headers_lib_autogen: phony CMakeFiles/headers_lib_autogen headers_lib_autogen/timestamp headers_lib_autogen/mocs_compilation.cpp headers_lib_autogen_timestamp_deps
+
+
+#############################################
 # Custom command for tp_project_fiodorkolotilin_autogen/timestamp
 
-build tp_project_fiodorkolotilin_autogen/timestamp tp_project_fiodorkolotilin_autogen/mocs_compilation.cpp | ${cmake_ninja_workdir}tp_project_fiodorkolotilin_autogen/timestamp ${cmake_ninja_workdir}tp_project_fiodorkolotilin_autogen/mocs_compilation.cpp: CUSTOM_COMMAND /usr/lib/qt5/bin/moc /usr/lib/qt5/bin/uic || libsources_lib.a sources_lib_autogen sources_lib_autogen_timestamp_deps tp_project_fiodorkolotilin_autogen_timestamp_deps
+build tp_project_fiodorkolotilin_autogen/timestamp tp_project_fiodorkolotilin_autogen/mocs_compilation.cpp | ${cmake_ninja_workdir}tp_project_fiodorkolotilin_autogen/timestamp ${cmake_ninja_workdir}tp_project_fiodorkolotilin_autogen/mocs_compilation.cpp: CUSTOM_COMMAND /usr/lib/qt5/bin/moc /usr/lib/qt5/bin/uic || headers_lib_autogen headers_lib_autogen_timestamp_deps libheaders_lib.a libsources_lib.a sources_lib_autogen sources_lib_autogen_timestamp_deps tp_project_fiodorkolotilin_autogen_timestamp_deps
   COMMAND = cd /home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/cmake-build-debug && /snap/clion/265/bin/cmake/linux/x64/bin/cmake -E cmake_autogen /home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/cmake-build-debug/CMakeFiles/tp_project_fiodorkolotilin_autogen.dir/AutogenInfo.json Debug && /snap/clion/265/bin/cmake/linux/x64/bin/cmake -E touch /home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/cmake-build-debug/tp_project_fiodorkolotilin_autogen/timestamp && /snap/clion/265/bin/cmake/linux/x64/bin/cmake -E cmake_transform_depfile Ninja gccdepfile /home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin /home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin /home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/cmake-build-debug /home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/cmake-build-debug /home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/cmake-build-debug/tp_project_fiodorkolotilin_autogen/deps /home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/cmake-build-debug/CMakeFiles/d/2c02b26ac125f1c7e27c4e75b06a079c273c7a545ae8abe26d37197953af5a40.d
   DESC = Automatic MOC and UIC for target tp_project_fiodorkolotilin
   depfile = /home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/cmake-build-debug/CMakeFiles/d/2c02b26ac125f1c7e27c4e75b06a079c273c7a545ae8abe26d37197953af5a40.d
@@ -183,15 +292,25 @@ build sources_lib_autogen/timestamp sources_lib_autogen/mocs_compilation.cpp | $
 
 
 #############################################
+# Custom command for headers_lib_autogen/timestamp
+
+build headers_lib_autogen/timestamp headers_lib_autogen/mocs_compilation.cpp | ${cmake_ninja_workdir}headers_lib_autogen/timestamp ${cmake_ninja_workdir}headers_lib_autogen/mocs_compilation.cpp: CUSTOM_COMMAND /usr/lib/qt5/bin/moc /usr/lib/qt5/bin/uic || headers_lib_autogen_timestamp_deps
+  COMMAND = cd /home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/cmake-build-debug && /snap/clion/265/bin/cmake/linux/x64/bin/cmake -E cmake_autogen /home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/cmake-build-debug/CMakeFiles/headers_lib_autogen.dir/AutogenInfo.json Debug && /snap/clion/265/bin/cmake/linux/x64/bin/cmake -E touch /home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/cmake-build-debug/headers_lib_autogen/timestamp && /snap/clion/265/bin/cmake/linux/x64/bin/cmake -E cmake_transform_depfile Ninja gccdepfile /home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin /home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin /home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/cmake-build-debug /home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/cmake-build-debug /home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/cmake-build-debug/headers_lib_autogen/deps /home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/cmake-build-debug/CMakeFiles/d/3b18dfab6f60605142b62eb8669dacd38a4da15a057861f45a81f09bf2cb25e7.d
+  DESC = Automatic MOC and UIC for target headers_lib
+  depfile = /home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/cmake-build-debug/CMakeFiles/d/3b18dfab6f60605142b62eb8669dacd38a4da15a057861f45a81f09bf2cb25e7.d
+  restat = 1
+
+
+#############################################
 # Phony custom command for CMakeFiles/tp_project_fiodorkolotilin_autogen_timestamp_deps
 
-build CMakeFiles/tp_project_fiodorkolotilin_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/tp_project_fiodorkolotilin_autogen_timestamp_deps: phony libsources_lib.a /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.3 /usr/lib/qt5/bin/moc /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.15.3 /usr/lib/qt5/bin/uic /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.15.3 || libsources_lib.a sources_lib_autogen sources_lib_autogen_timestamp_deps
+build CMakeFiles/tp_project_fiodorkolotilin_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/tp_project_fiodorkolotilin_autogen_timestamp_deps: phony libsources_lib.a /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.3 /usr/lib/qt5/bin/moc /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.15.3 libheaders_lib.a /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.15.3 /usr/lib/qt5/bin/uic || headers_lib_autogen headers_lib_autogen_timestamp_deps libheaders_lib.a libsources_lib.a sources_lib_autogen sources_lib_autogen_timestamp_deps
 
 
 #############################################
 # Phony custom command for CMakeFiles/tp_project_fiodorkolotilin_autogen
 
-build CMakeFiles/tp_project_fiodorkolotilin_autogen | ${cmake_ninja_workdir}CMakeFiles/tp_project_fiodorkolotilin_autogen: phony tp_project_fiodorkolotilin_autogen/timestamp || libsources_lib.a sources_lib_autogen sources_lib_autogen_timestamp_deps tp_project_fiodorkolotilin_autogen_timestamp_deps
+build CMakeFiles/tp_project_fiodorkolotilin_autogen | ${cmake_ninja_workdir}CMakeFiles/tp_project_fiodorkolotilin_autogen: phony tp_project_fiodorkolotilin_autogen/timestamp || headers_lib_autogen headers_lib_autogen_timestamp_deps libheaders_lib.a libsources_lib.a sources_lib_autogen sources_lib_autogen_timestamp_deps tp_project_fiodorkolotilin_autogen_timestamp_deps
 
 
 #############################################
@@ -205,8 +324,22 @@ build CMakeFiles/sources_lib_autogen_timestamp_deps | ${cmake_ninja_workdir}CMak
 
 build CMakeFiles/sources_lib_autogen | ${cmake_ninja_workdir}CMakeFiles/sources_lib_autogen: phony sources_lib_autogen/timestamp || sources_lib_autogen_timestamp_deps
 
+
+#############################################
+# Phony custom command for CMakeFiles/headers_lib_autogen_timestamp_deps
+
+build CMakeFiles/headers_lib_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/headers_lib_autogen_timestamp_deps: phony /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.3 /usr/lib/qt5/bin/moc /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.15.3 /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.15.3 /usr/lib/qt5/bin/uic
+
+
+#############################################
+# Phony custom command for CMakeFiles/headers_lib_autogen
+
+build CMakeFiles/headers_lib_autogen | ${cmake_ninja_workdir}CMakeFiles/headers_lib_autogen: phony headers_lib_autogen/timestamp || headers_lib_autogen_timestamp_deps
+
 # =============================================================================
 # Target aliases.
+
+build headers_lib: phony libheaders_lib.a
 
 build sources_lib: phony libsources_lib.a
 
@@ -218,7 +351,7 @@ build sources_lib: phony libsources_lib.a
 #############################################
 # Folder: /home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/cmake-build-debug
 
-build all: phony tp_project_fiodorkolotilin libsources_lib.a
+build all: phony tp_project_fiodorkolotilin libsources_lib.a libheaders_lib.a
 
 # =============================================================================
 # Built-in targets
