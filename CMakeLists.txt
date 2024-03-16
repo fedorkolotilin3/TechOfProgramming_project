@@ -41,6 +41,7 @@ set(SOURCE_FILES
 )
 add_executable(tp_project_fiodorkolotilin
         main.cpp
+        ${SOURCE_FILES}
 )
 
 add_library(sources_lib ${SOURCES_FILES})

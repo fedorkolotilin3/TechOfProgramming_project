@@ -16,7 +16,8 @@ class PlayMenu : public Widget {
   Button exit;
  public:
   PlayMenu();
+  PlayMenu(Widget* widget);
+  void OnCreate();
 };
-
 
 #endif //TP_PROJECT_FIODORKOLOTILIN_HEADERS_UILOGIC_HUB_PLAYMENU_H_

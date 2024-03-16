@@ -3,23 +3,29 @@
 //
 
 #include "PlayMenu.h"
-#include "Button.cpp"
+#include "Button.h"
 #include "Widget.h"
-//#include "MainMenu.cpp"
+#include "MainMenu.h"
+#include "StartActivity.h"
 
-PlayMenu::PlayMenu() :
-  start_global_game(this),
-  start_local_game(this),
-  exit(this) {
-  start_global_game.SetPosition(300, 100);
+void PlayMenu::OnCreate() {
+  auto layout = new QVBoxLayout(this);
   start_global_game.SetText("start global game");
-  start_local_game.SetPosition(300, 400);
   start_local_game.SetText("start local game");
-  exit.SetPosition(300, 700);
   exit.SetText("exit");
   exit.SetAction([this]{
-    auto main_menu = new MainMenu;
-    main_menu->Show();
-    this->Hide();
+    StartActivity::ChangeWidget(this, new MainMenu);
   });
+  layout->addWidget(start_global_game.GetSelfButton(), 0, Qt::AlignHCenter);
+  layout->addWidget(start_local_game.GetSelfButton(), 0, Qt::AlignHCenter);
+  layout->addWidget(exit.GetSelfButton(), 0, Qt::AlignHCenter);
+}
+
+PlayMenu::PlayMenu(){
+  OnCreate();
+}
+
+PlayMenu::PlayMenu(Widget* widget) {
+  setParent(widget);
+  OnCreate();
 }

@@ -6,7 +6,7 @@
 
 #include <QApplication>
 
-class Activity : QApplication {
+class Activity : public QApplication {
  public:
   int Launch();
   Activity(int& argc, char** argv);

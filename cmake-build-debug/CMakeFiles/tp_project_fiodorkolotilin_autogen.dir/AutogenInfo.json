@@ -143,6 +143,46 @@
 			"/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/main.cpp",
 			"MU",
 			null
+		],
+		[
+			"/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/UIClasses/Activity.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/UIClasses/Button.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/UIClasses/TextWidget.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/UIClasses/View.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/UIClasses/Widget.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/UILogic/Hub/MainMenu.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/UILogic/Hub/PlayMenu.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/UILogic/Hub/StartActivity.cpp",
+			"MU",
+			null
 		]
 	],
 	"UIC_OPTIONS" : [],
