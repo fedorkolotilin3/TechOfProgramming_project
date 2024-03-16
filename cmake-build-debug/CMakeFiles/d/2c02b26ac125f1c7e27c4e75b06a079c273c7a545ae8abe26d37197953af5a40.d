@@ -3,12 +3,15 @@ tp_project_fiodorkolotilin_autogen/timestamp: \
   CMakeFiles/3.27.8/CMakeCCompiler.cmake \
   CMakeFiles/3.27.8/CMakeCXXCompiler.cmake \
   CMakeFiles/3.27.8/CMakeSystem.cmake \
-  /home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/headers/UIClasses/Button.h \
-  /home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/headers/UIClasses/TextWidget.h \
-  /home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/headers/UIClasses/View.h \
-  /home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/headers/UIClasses/Widget.h \
-  /home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/headers/UILogic/Hub/MainMenu.h \
   /home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/main.cpp \
+  /home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/UIClasses/Activity.cpp \
+  /home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/UIClasses/Button.cpp \
+  /home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/UIClasses/TextWidget.cpp \
+  /home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/UIClasses/View.cpp \
+  /home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/UIClasses/Widget.cpp \
+  /home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/UILogic/Hub/MainMenu.cpp \
+  /home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/UILogic/Hub/PlayMenu.cpp \
+  /home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/UILogic/Hub/StartActivity.cpp \
   /snap/clion/265/bin/cmake/linux/x64/bin/cmake \
   /snap/clion/265/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeCInformation.cmake \
   /snap/clion/265/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake \

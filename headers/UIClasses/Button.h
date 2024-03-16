@@ -5,17 +5,24 @@
 #ifndef TP_PROJECT_FIODORKOLOTILIN_UICLASSES_BUTTON_H_
 #define TP_PROJECT_FIODORKOLOTILIN_UICLASSES_BUTTON_H_
 
-#include <QAbstractButton>
 #include <QPushButton>
+#include <Widget.h>
 
-class Button : public QPushButton {
- private:
-  QPushButton* orogin_button;
+class Button : public Widget, public QPushButton {
+  QPoint start_vector;
  public:
   void SetText(std::string text);
-  void SetPosition(int x, int y);
-  void SetGeometry(int x, int y, int wight, int height);
-  Button(QWidget* parent);
+  void SetAction(auto function)  {
+    QObject::connect(this, &Button::clicked, function);
+  }
+//  void SetPosition(int x, int y);
+//  void SetGeometry(int x, int y, int wight, int height);
+//  void SetRelative(QPoint point);
+//  void SetRelativeToCenter();
+  Button(Widget* parent);
+  Button() = default;
+  Widget* GetSelfWidget();
+  QPushButton* GetSelfButton();
 };
 
 #endif //TP_PROJECT_FIODORKOLOTILIN_UICLASSES_BUTTON_H_

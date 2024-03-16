@@ -77,39 +77,7 @@
 	"CMAKE_SOURCE_DIR" : "/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin",
 	"DEP_FILE" : "/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/cmake-build-debug/tp_project_fiodorkolotilin_autogen/deps",
 	"DEP_FILE_RULE_NAME" : "tp_project_fiodorkolotilin_autogen/timestamp",
-	"HEADERS" : 
-	[
-		[
-			"/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/headers/UIClasses/Button.h",
-			"MU",
-			"675N7AGBRF/moc_Button.cpp",
-			null
-		],
-		[
-			"/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/headers/UIClasses/TextWidget.h",
-			"MU",
-			"675N7AGBRF/moc_TextWidget.cpp",
-			null
-		],
-		[
-			"/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/headers/UIClasses/View.h",
-			"MU",
-			"675N7AGBRF/moc_View.cpp",
-			null
-		],
-		[
-			"/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/headers/UIClasses/Widget.h",
-			"MU",
-			"675N7AGBRF/moc_Widget.cpp",
-			null
-		],
-		[
-			"/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/headers/UILogic/Hub/MainMenu.h",
-			"MU",
-			"K43I532LLF/moc_MainMenu.cpp",
-			null
-		]
-	],
+	"HEADERS" : [],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
 	"INCLUDE_DIR" : "/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/cmake-build-debug/tp_project_fiodorkolotilin_autogen/include",
 	"MOC_COMPILATION_FILE" : "/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/cmake-build-debug/tp_project_fiodorkolotilin_autogen/mocs_compilation.cpp",
@@ -173,6 +141,46 @@
 	[
 		[
 			"/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/main.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/UIClasses/Activity.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/UIClasses/Button.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/UIClasses/TextWidget.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/UIClasses/View.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/UIClasses/Widget.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/UILogic/Hub/MainMenu.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/UILogic/Hub/PlayMenu.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/UILogic/Hub/StartActivity.cpp",
 			"MU",
 			null
 		]

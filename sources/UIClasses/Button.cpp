@@ -8,13 +8,27 @@ void Button::SetText(std::string text) {
 //  this->orogin_button->setText(q_text);
   this->setText(q_text);
 }
-void Button::SetPosition(int x, int y) {
-//  this->orogin_button->move(x, y);
-  this->move(x, y);
+//void Button::SetPosition(int x, int y) {
+//  //  this->move(position + this->start_vector);
+//  this->move(x + start_vector.x(), y + start_vector.y());
+//}
+//void Button::SetGeometry(int x, int y, int wight, int height) {
+//  this->setGeometry(x + this->start_vector.x(), y + this->start_vector.y(), wight, height);
+//}
+//void Button::SetRelative(QPoint point) {
+//  this->start_vector = point;
+//}
+//void Button::SetRelativeToCenter() {
+//  this->SetRelative({-this->width() / 2, -this->height() / 2});
+//}
+Button::Button(Widget* parent) : Widget(parent) {
+  this->Button::QPushButton::setParent(dynamic_cast<Widget*>(this));
 }
-void Button::SetGeometry(int x, int y, int wight, int height) {
-//  this->orogin_button->setGeometry(x, y, wight, height);
-  this->setGeometry(x, y, wight, height);
+
+Widget* Button::GetSelfWidget() {
+  return dynamic_cast<Widget*>(this);
 }
-Button::Button(QWidget* parent) : QPushButton(parent){
+
+QPushButton* Button::GetSelfButton() {
+  return dynamic_cast<Button*>(this);
 }
