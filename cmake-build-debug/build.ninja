@@ -185,7 +185,7 @@ build sources_lib_autogen/timestamp sources_lib_autogen/mocs_compilation.cpp | $
 #############################################
 # Phony custom command for CMakeFiles/tp_project_fiodorkolotilin_autogen_timestamp_deps
 
-build CMakeFiles/tp_project_fiodorkolotilin_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/tp_project_fiodorkolotilin_autogen_timestamp_deps: phony libsources_lib.a /usr/lib/qt5/bin/uic /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.3 /usr/lib/qt5/bin/moc /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.15.3 /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.15.3 || libsources_lib.a sources_lib_autogen sources_lib_autogen_timestamp_deps
+build CMakeFiles/tp_project_fiodorkolotilin_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/tp_project_fiodorkolotilin_autogen_timestamp_deps: phony libsources_lib.a /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.3 /usr/lib/qt5/bin/moc /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.15.3 /usr/lib/qt5/bin/uic /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.15.3 || libsources_lib.a sources_lib_autogen sources_lib_autogen_timestamp_deps
 
 
 #############################################
@@ -197,7 +197,7 @@ build CMakeFiles/tp_project_fiodorkolotilin_autogen | ${cmake_ninja_workdir}CMak
 #############################################
 # Phony custom command for CMakeFiles/sources_lib_autogen_timestamp_deps
 
-build CMakeFiles/sources_lib_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/sources_lib_autogen_timestamp_deps: phony /usr/lib/qt5/bin/uic /usr/lib/qt5/bin/moc
+build CMakeFiles/sources_lib_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/sources_lib_autogen_timestamp_deps: phony /usr/lib/qt5/bin/moc /usr/lib/qt5/bin/uic
 
 
 #############################################
