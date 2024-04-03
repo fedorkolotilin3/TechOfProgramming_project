@@ -2,23 +2,20 @@
 #include <QtGui>
 #include <QtWidgets>
 #include "StartActivity.h"
-//#include "Button.cpp"
-//#include "MainMenu.cpp"
-//#include "PlayMenu.cpp"
-//#include "Activity.cpp"
-//#include "Widget.cpp"
+#include "Application.h"
+#include "FieldStructure.h"
 
 int main(int argc, char* argv[]) {
-  StartActivity app(argc, argv);
-//  QApplication app(argc, argv);
-//  auto main_menu = new QWidget;
-//  auto layout = new QVBoxLayout;
-//  auto text1 = new QLabel("text1");
-//  auto text2 = new QLabel("text2");
-//  layout->addWidget(text1, 1, Qt::AlignHCenter);
-//  layout->addWidget(text2, 1, Qt::AlignHCenter);
-//  main_menu->setLayout(layout);
-//  main_menu->showMaximized();
-//  return app.exec();
-  return app.Launch();
+  QApplication app(argc, argv);
+  Application::Init();
+  auto start_activity = new StartActivity;
+  Application::AddWidget(start_activity->GetContainer());
+  start_activity->Launch();
+  Application::Exec();
+  FieldStructure f("Data/test_field.xml");
+  auto vec = f.GetContent();
+  FieldStructure f2("Data/test_field.txt");
+  f2.SetContent(vec);
+
+  return app.exec();
 }

@@ -91,16 +91,25 @@
 	],
 	"MOC_INCLUDES" : 
 	[
+		"/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/rapidxml-1.13",
 		"/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/headers",
 		"/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/headers/UIClasses",
 		"/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/headers/Model",
+		"/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/headers/Model/AppData",
+		"/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/headers/Model/DataTypes",
+		"/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/headers/Model/Game",
 		"/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/headers/UILogic/Hub",
 		"/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/headers/UILogic/Game",
+		"/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/headers/UILogic",
 		"/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources",
 		"/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/UIClasses",
 		"/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/Model",
+		"/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/Model/DataTypes",
+		"/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/Model/Game",
+		"/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/Model/AppData",
 		"/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/UILogic/Hub",
 		"/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/UILogic/Game",
+		"/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/UILogic",
 		"/usr/include/x86_64-linux-gnu/qt5",
 		"/usr/include/x86_64-linux-gnu/qt5/QtCore",
 		"/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++",
@@ -145,6 +154,31 @@
 			null
 		],
 		[
+			"/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/Model/DataTypes/FieldStructure.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/Model/DataTypes/File.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/Model/Game/GameManager.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/Model/Game/Hex.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/Model/Game/Player.cpp",
+			"MU",
+			null
+		],
+		[
 			"/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/UIClasses/Activity.cpp",
 			"MU",
 			null
@@ -166,6 +200,26 @@
 		],
 		[
 			"/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/UIClasses/Widget.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/UILogic/Application.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/UILogic/Game/GameFieldWidget.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/UILogic/Game/GameInfoWidget.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/sources/UILogic/Game/TutorialActivity.cpp",
 			"MU",
 			null
 		],

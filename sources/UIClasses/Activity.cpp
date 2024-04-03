@@ -5,6 +5,10 @@
 #include "Activity.h"
 
 int Activity::Launch() {
-  return this->exec();
+  return 0;
 }
-Activity::Activity(int& argc, char** argv) : QApplication(argc, argv) {}
+Activity::Activity() {}
+
+Widget* Activity::GetContainer() {
+  return widget_container;
+}

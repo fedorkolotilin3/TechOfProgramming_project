@@ -32,6 +32,8 @@ class Widget : /*public View,*/ public QWidget {
   void SetParent(Widget* parent);
   void SetLayout(QLayout* layout);
   QLayout* GetLayout();
+  static void ChangeWidget(Widget* prev, Widget* next);
+  void ChangeWidget(Widget* next);
 };
 
 #endif //TP_PROJECT_FIODORKOLOTILIN_UICLASSES_WIDGET_H_

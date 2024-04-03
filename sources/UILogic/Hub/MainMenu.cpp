@@ -3,6 +3,7 @@
 //
 #include <QApplication>
 #include <QLabel>
+#include <QTextEdit>
 #include "MainMenu.h"
 #include "PlayMenu.h"
 #include "Widget.h"
@@ -19,10 +20,14 @@ MainMenu::MainMenu(Widget* widget) {
 void MainMenu::OnCreate() {
   QVBoxLayout* layout = new QVBoxLayout;
   layout->setAlignment(layout, Qt::AlignHCenter);
+  auto edit_text = new QTextEdit;
+  edit_text->setText("enter something");
+  edit_text->setMaximumSize(400, 100);
+  layout->addWidget(edit_text, 0, Qt::AlignHCenter);
   play_button.SetText("Play");
   play_button.SetAction([this]{
     PlayMenu* play_menu = new PlayMenu;
-    StartActivity::ChangeWidget(this, play_menu);
+    Widget::ChangeWidget(this, play_menu);
   });
   layout->addWidget(play_button.GetSelfButton(), 0, Qt::AlignHCenter);
   layout->addWidget(settings_button.GetSelfButton(), 0, Qt::AlignHCenter);
