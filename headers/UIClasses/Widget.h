@@ -6,13 +6,15 @@
 #define TP_PROJECT_FIODORKOLOTILIN_UICLASSES_WIDGET_H_
 
 #include <QWidget>
+#include <QtGui>
+#include <QtCore>
 #include <Layout.h>
 
 class Widget : /*public View,*/ public QWidget {
   std::string widget_name;
   QPoint start_vector;
   Widget* parent;
-  QLayout* layout;
+  QLayout* layout_;
  protected:
   void resizeEvent(QResizeEvent* resize_event) override;
  public:
