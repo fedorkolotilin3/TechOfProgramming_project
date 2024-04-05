@@ -2,23 +2,31 @@
 #include <QtGui>
 #include <QtWidgets>
 #include "StartActivity.h"
-//#include "Button.cpp"
-//#include "MainMenu.cpp"
-//#include "PlayMenu.cpp"
-//#include "Activity.cpp"
-//#include "Widget.cpp"
+#include "Application.h"
+#include "FieldStructure.h"
+
+void SetField() {
+    FieldStructure f("Data/test_field.xml");
+    auto vec = f.GetContent();
+    vec.clear();
+    for (int i = -2; i < 3; i++) {
+      for (int j = -2; j < 3; j++) {
+        if (i + j >= -2 && i + j <= 2) {
+          vec.push_back({Hex::GetRandom(), {i, j}});
+        }
+      }
+    }
+    FieldStructure f2("Data/test_field.xml");
+    f2.SetContent(vec);
+}
 
 int main(int argc, char* argv[]) {
-  StartActivity app(argc, argv);
-//  QApplication app(argc, argv);
-//  auto main_menu = new QWidget;
-//  auto layout = new QVBoxLayout;
-//  auto text1 = new QLabel("text1");
-//  auto text2 = new QLabel("text2");
-//  layout->addWidget(text1, 1, Qt::AlignHCenter);
-//  layout->addWidget(text2, 1, Qt::AlignHCenter);
-//  main_menu->setLayout(layout);
-//  main_menu->showMaximized();
-//  return app.exec();
-  return app.Launch();
+  QApplication app(argc, argv);
+  Application::Init();
+  auto start_activity = new StartActivity;
+  Application::AddWidget(start_activity->GetContainer());
+  start_activity->Launch();
+  Application::Exec();
+  SetField();
+  return app.exec();
 }

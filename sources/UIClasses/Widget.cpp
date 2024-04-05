@@ -59,8 +59,7 @@ QPoint Widget::GetCenter() {
   return {this->width() / 2, this->height() / 2};
 }
 Widget::Widget(Widget* parent) : parent(parent), QWidget(parent), start_vector(0, 0) {}
-Widget::Widget(): QWidget(), start_vector(0, 0) {
-}
+Widget::Widget(): QWidget(), start_vector(0, 0) {}
 
 Widget* Widget::GetParent() {
   return parent;
@@ -72,10 +71,19 @@ void Widget::SetParent(Widget* parent) {
 }
 
 void Widget::SetLayout(QLayout* layout) {
-  this->layout = layout;
+  this->layout_ = layout;
   setLayout(layout);
 }
 
 QLayout* Widget::GetLayout() {
-  return this->layout;
+  return this->layout_;
+}
+
+void Widget::ChangeWidget(Widget* prev, Widget* next) {
+  auto pointer = (prev->parentWidget()->layout()->replaceWidget(prev, next));
+  pointer->widget()->deleteLater();
+}
+
+void Widget::ChangeWidget(Widget* next) {
+  ChangeWidget(this, next);
 }

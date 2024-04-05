@@ -12,9 +12,7 @@ class Button : public Widget, public QPushButton {
   QPoint start_vector;
  public:
   void SetText(std::string text);
-  void SetAction(auto function)  {
-    QObject::connect(this, &Button::clicked, function);
-  }
+  void SetAction(auto function);
 //  void SetPosition(int x, int y);
 //  void SetGeometry(int x, int y, int wight, int height);
 //  void SetRelative(QPoint point);

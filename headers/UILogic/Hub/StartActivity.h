@@ -7,12 +7,15 @@
 
 #include "Activity.h"
 #include "Widget.h"
+#include "MainMenu.h"
 
-class StartActivity : Activity{
+class StartActivity : public Activity{
+ private:
+  MainMenu* main_menu;
  public:
    int Launch();
    StartActivity(int& argc, char** argv);
-   static void ChangeWidget(Widget* prev, Widget* next);
+   StartActivity();
 };
 
 #endif //TP_PROJECT_FIODORKOLOTILIN_UILOGIC_HUB_STARTACTIVITY_H_

@@ -11,6 +11,7 @@
 
 class PlayMenu : public Widget {
  private:
+  Button start_tutorial;
   Button start_local_game;
   Button start_global_game;
   Button exit;

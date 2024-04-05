@@ -1,3 +1,6 @@
-//
-// Created by fedorkolotilin on 13.03.24.
-//
+#include <QLabel>
+class TextWidget : public QLabel {
+  TextWidget();
+ public:
+  TextWidget(std::string);
+};

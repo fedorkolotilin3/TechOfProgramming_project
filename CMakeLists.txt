@@ -28,6 +28,23 @@ set(HEADER_FILES
         ${H_UILOGIC_PATH}/Hub/MainMenu.h
         ${H_UILOGIC_PATH}/Hub/StartActivity.h
         ${H_UILOGIC_PATH}/Hub/PlayMenu.h
+        ${H_UILOGIC_PATH}/Game/TutorialActivity.h
+        ${H_UILOGIC_PATH}/Game/GameInfoWidget.h
+        ${H_UILOGIC_PATH}/Game/GameFieldWidget.h
+        ${H_UILOGIC_PATH}/Application.h
+        headers/Model/Game/GameManager.h
+        headers/Model/Game/Player.h
+        headers/Model/Game/GameField.h
+        headers/Model/DataTypes/File.h
+        headers/Model/DataTypes/FieldStructure.h
+        headers/Model/Game/Hex.h
+        headers/UILogic/Game/TutorialWidget.h
+        headers/my_geometry.h
+        sources/Model/Game/HexView.cpp
+        headers/Model/Game/HexView.h
+        headers/Model/Game/EdgeView.h
+        headers/Model/Game/VertexView.h
+        headers/Model/Game/FieldObjectView.h
 )
 set(SOURCE_FILES
         ${S_UICLASSES_PATH}/View.cpp
@@ -38,6 +55,20 @@ set(SOURCE_FILES
         ${S_UILOGIC_PATH}/Hub/MainMenu.cpp
         ${S_UILOGIC_PATH}/Hub/StartActivity.cpp
         ${S_UILOGIC_PATH}/Hub/PlayMenu.cpp
+        ${S_UILOGIC_PATH}/Game/TutorialActivity.cpp
+        ${S_UILOGIC_PATH}/Game/GameInfoWidget.cpp
+        ${S_UILOGIC_PATH}/Game/GameFieldWidget.cpp
+        ${S_UILOGIC_PATH}/Application.cpp
+        sources/Model/Game/GameManager.cpp
+        sources/Model/Game/Player.cpp
+        sources/Model/DataTypes/FieldStructure.cpp
+        sources/Model/DataTypes/File.cpp
+        sources/Model/Game/Hex.cpp
+        sources/UILogic/Game/TutorialWidget.cpp
+        sources/Model/Game/FieldObjectView.cpp
+        sources/Model/Game/GameField.cpp
+        sources/Model/Game/EdgeView.cpp
+        sources/Model/Game/VerticeView.cpp
 )
 add_executable(tp_project_fiodorkolotilin
         main.cpp
@@ -48,16 +79,25 @@ add_library(sources_lib ${SOURCES_FILES})
 add_library(headers_lib ${HEADER_FILES})
 
 target_include_directories(tp_project_fiodorkolotilin PUBLIC
+        rapidxml-1.13
         headers
         headers/UIClasses
         headers/Model
+        headers/Model/AppData
+        headers/Model/DataTypes
+        headers/Model/Game
         headers/UILogic/Hub
         headers/UILogic/Game
+        headers/UILogic/
         sources
         sources/UIClasses
         sources/Model
+        sources/Model/DataTypes
+        sources/Model/Game
+        sources/Model/AppData
         sources/UILogic/Hub
         sources/UILogic/Game
+        sources/UILogic/
 )
 
 target_include_directories(sources_lib PUBLIC
@@ -76,11 +116,17 @@ target_include_directories(headers_lib PUBLIC
         headers
         headers/UIClasses
         headers/Model
+        headers/Model/AppData
+        headers/Model/Game
+        headers/Model/DataTypes
         headers/UILogic/Hub
         headers/UILogic/Game
         sources
         sources/UIClasses
         sources/Model
+        sources/Model/AppData
+        sources/Model/Game
+        sources/Model/DataTypes
         sources/UILogic/Hub
         sources/UILogic/Game
 )
