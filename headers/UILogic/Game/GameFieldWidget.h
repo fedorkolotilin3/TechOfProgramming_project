@@ -9,9 +9,6 @@
 #include "Widget.h"
 #include "Hex.h"
 class GameFieldWidget : public Widget {
-  Q_OBJECT
- public: signals:
-  void mouse_pressed(QMouseEvent* event);
  public:
   QVector<QPolygon> polygons;
   QVector<QPolygon> click_polygons;

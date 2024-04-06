@@ -32,7 +32,3 @@ Widget* Button::GetSelfWidget() {
 QPushButton* Button::GetSelfButton() {
   return dynamic_cast<Button*>(this);
 }
-
-void Button::SetAction(auto function)  {
-  QObject::connect(this, &Button::clicked, function);
-}

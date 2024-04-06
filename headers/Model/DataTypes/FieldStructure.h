@@ -4,8 +4,8 @@
 #include "File.h"
 #include "Hex.h"
 #include <vector>
-#include "rapidxml.hpp"
-#include "rapidxml_print.hpp"
+#include <rapidxml.hpp>
+#include <rapidxml_print.hpp>
 
 using namespace rapidxml;
 
