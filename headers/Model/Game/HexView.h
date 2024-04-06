@@ -6,21 +6,44 @@
 #define TP_PROJECT_FIODORKOLOTILIN_HEADERS_MODEL_GAME_HEXVIEW_H_
 
 #include <QPolygon>
+#include <QPainter>
+#include <QPainterPath>
 #include "my_geometry.h"
 #include "Hex.h"
 
 class HexView {
+  inline static int rotation_angle = -30;
   Polygon my_polygon;
-  QPolygon  qPolygon;
+  QPolygon q_polygon;
+  Polygon my_clickable_polygon;
+  QPolygon q_clickable_polygon;
   Hex hex;
+  int x;
+  int y;
+  double hex_size;
+
+  int scale = 75;
+  double clickable_polygon_k = 0.6;
 
  public:
-  explicit HexView(const Hex &hex);
-  static QVector<QPoint> GenerateHexagon(double x, double y, double scale, double field_center_x, double field_center_y);
-  static QPolygon PolygonResize(QPolygon& poly, double koef);
-  static QPolygon PolygonResize(std::vector<Point> poly, double koef);
-  static QVector<QPoint> GenerateHexagon(QPair<double, double> pair, double scale, double field_center_x, double field_center_y);
-  static QPair<double, double> ConvertCoords(std::pair<int, int> pair, double scale, double split_k, double field_scale);
+
+  HexView(const Hex &hex,
+          double x,
+          double y,
+          int scale,
+          double clickable_polygon_k,
+          double hex_size = 2);
+  HexView(const Hex &hex,
+          std::pair<double, double> center,
+          int scale,
+          double clickable_polygon_k,
+          double hex_size = 2);
+  void Draw(QPainter& painter);
+  void Click(int x, int y);
+
+  static Polygon GenerateHexagon(double x, double y, double hex_size, double scale);
+  static QPolygon PTOQP(Polygon& polygon);
+  static Polygon QPTOP(QPolygon& polygon);
 };
 
 #endif //TP_PROJECT_FIODORKOLOTILIN_HEADERS_MODEL_GAME_HEXVIEW_H_

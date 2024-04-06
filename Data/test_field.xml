@@ -1,60 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <List>
-	<Widget x_coord="-2" y_coord="0">
+	<Widget x_coord="-8" y_coord="-4">
+		<Type>Mountain</Type>
+	</Widget>
+	<Widget x_coord="-6" y_coord="-6">
+		<Type>Quarry</Type>
+	</Widget>
+	<Widget x_coord="-6" y_coord="0">
+		<Type>Field</Type>
+	</Widget>
+	<Widget x_coord="-4" y_coord="-8">
 		<Type>Pasture</Type>
 	</Widget>
-	<Widget x_coord="-2" y_coord="1">
+	<Widget x_coord="-4" y_coord="-2">
 		<Type>Mountain</Type>
+	</Widget>
+	<Widget x_coord="-4" y_coord="4">
+		<Type>Field</Type>
+	</Widget>
+	<Widget x_coord="-2" y_coord="-4">
+		<Type>Field</Type>
 	</Widget>
 	<Widget x_coord="-2" y_coord="2">
 		<Type>Quarry</Type>
 	</Widget>
-	<Widget x_coord="-1" y_coord="-1">
-		<Type>Forest</Type>
-	</Widget>
-	<Widget x_coord="-1" y_coord="0">
+	<Widget x_coord="0" y_coord="-6">
 		<Type>Pasture</Type>
-	</Widget>
-	<Widget x_coord="-1" y_coord="1">
-		<Type>Forest</Type>
-	</Widget>
-	<Widget x_coord="-1" y_coord="2">
-		<Type>Mountain</Type>
-	</Widget>
-	<Widget x_coord="0" y_coord="-2">
-		<Type>Quarry</Type>
-	</Widget>
-	<Widget x_coord="0" y_coord="-1">
-		<Type>Field</Type>
 	</Widget>
 	<Widget x_coord="0" y_coord="0">
-		<Type>Mountain</Type>
-	</Widget>
-	<Widget x_coord="0" y_coord="1">
-		<Type>Quarry</Type>
-	</Widget>
-	<Widget x_coord="0" y_coord="2">
-		<Type>Quarry</Type>
-	</Widget>
-	<Widget x_coord="1" y_coord="-2">
-		<Type>Forest</Type>
-	</Widget>
-	<Widget x_coord="1" y_coord="-1">
 		<Type>Field</Type>
 	</Widget>
-	<Widget x_coord="1" y_coord="0">
-		<Type>Pasture</Type>
-	</Widget>
-	<Widget x_coord="1" y_coord="1">
-		<Type>Mountain</Type>
+	<Widget x_coord="0" y_coord="6">
+		<Type>Forest</Type>
 	</Widget>
 	<Widget x_coord="2" y_coord="-2">
 		<Type>Forest</Type>
 	</Widget>
-	<Widget x_coord="2" y_coord="-1">
+	<Widget x_coord="2" y_coord="4">
+		<Type>Pasture</Type>
+	</Widget>
+	<Widget x_coord="4" y_coord="-4">
 		<Type>Mountain</Type>
 	</Widget>
-	<Widget x_coord="2" y_coord="0">
+	<Widget x_coord="4" y_coord="2">
+		<Type>Mountain</Type>
+	</Widget>
+	<Widget x_coord="4" y_coord="8">
+		<Type>Forest</Type>
+	</Widget>
+	<Widget x_coord="6" y_coord="0">
+		<Type>Mountain</Type>
+	</Widget>
+	<Widget x_coord="6" y_coord="6">
+		<Type>Pasture</Type>
+	</Widget>
+	<Widget x_coord="8" y_coord="4">
 		<Type>Quarry</Type>
 	</Widget>
 </List>

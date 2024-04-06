@@ -15,7 +15,8 @@ Qt::GlobalColor Hex::GetColor() {
 }
 
 Hex Hex::GetRandom() {
-  return Hex(static_cast<HexType>(rand() % 5 + 1));
+  auto type = static_cast<HexType>(rand() % 5 + 1);
+  return {type};
 }
 
 //std::string Hex::GetTypeString(int ind) {

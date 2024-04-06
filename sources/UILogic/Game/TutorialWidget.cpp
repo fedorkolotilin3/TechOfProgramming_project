@@ -2,12 +2,8 @@
 #include <QMainWindow>
 #include "TutorialWidget.h"
 #include "TextWidget.h"
-#include "GameFieldWidget.h"
+#include "Button.h"
 
-Widget* GenerateFieldWidget() {
-  auto widget = new GameFieldWidget();
-  return widget;
-}
 
 void TutorialWidget::OnCreate() {
 //  scrollArea->setBackgroundRole(QPalette::Dark);
@@ -27,16 +23,25 @@ void TutorialWidget::OnCreate() {
 //  main_widget->setCentralWidget(field_area);
 
   auto layout = new QGridLayout(this);
-  layout->addWidget(GenerateFieldWidget(), 0, 0, 4, 4);
+  auto fieldWidget = new GameFieldWidget();
+  layout->addWidget(fieldWidget, 0, 0, 4, 4);
   auto text1 = new TextWidget("other players && chat");
   auto text2 = new TextWidget("your buildings and actions");
   auto text3 = new TextWidget("your info such as resources count");
+  auto button = new Button();
+  button->setText("reload field");
+  button->SetAction([fieldWidget] {
+    fieldWidget->field.ShuffleHexes();
+    fieldWidget->field = GameField(fieldWidget->x() + fieldWidget->width() / 2, fieldWidget->y() + fieldWidget->height() / 2);
+    fieldWidget->repaint();
+  });
   text1->setFrameStyle(QFrame::Panel | QFrame::Raised);
   text2->setFrameStyle(QFrame::Panel | QFrame::Raised);
   text3->setFrameStyle(QFrame::Panel | QFrame::Raised);
-  layout->addWidget(text1,0, 4, 4, 1, Qt::AlignCenter);
+  layout->addWidget(text1,0, 4, 3, 1, Qt::AlignCenter);
   layout->addWidget(text2, 4,  0, 1, 4, Qt::AlignCenter);
   layout->addWidget(text3,4, 4, Qt::AlignCenter);
+  layout->addWidget(button->GetSelfButton(),3, 4, Qt::AlignCenter);
 //  layout->set()
 }
 

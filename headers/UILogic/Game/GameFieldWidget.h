@@ -8,11 +8,10 @@
 
 #include "Widget.h"
 #include "Hex.h"
+#include "GameField.h"
 class GameFieldWidget : public Widget {
  public:
-  QVector<QPolygon> polygons;
-  QVector<QPolygon> click_polygons;
-  std::vector<std::pair<Hex, std::pair<int, int>>> hex_vector;
+  GameField field;
  protected:
   void paintEvent(QPaintEvent* event) override;
   void mousePressEvent(QMouseEvent* event) override;

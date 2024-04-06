@@ -40,10 +40,9 @@ set(HEADER_FILES
         headers/Model/Game/Hex.h
         headers/UILogic/Game/TutorialWidget.h
         headers/my_geometry.h
-        sources/Model/Game/HexView.cpp
         headers/Model/Game/HexView.h
+        headers/Model/Game/VertexView.h
         headers/Model/Game/EdgeView.h
-        headers/Model/Game/VerticeView.h
 )
 set(SOURCE_FILES
         ${S_UICLASSES_PATH}/View.cpp
@@ -64,8 +63,13 @@ set(SOURCE_FILES
         sources/Model/DataTypes/File.cpp
         sources/Model/Game/Hex.cpp
         sources/UILogic/Game/TutorialWidget.cpp
+        sources/Model/Game/GameField.cpp
+        sources/Model/Game/VertexView.cpp
+        sources/Model/my_geometry.cpp
+        sources/Model/Game/EdgeView.cpp
+        sources/Model/Game/HexView.cpp
 )
-add_executable(tp_project_fiodorkolotilin
+add_executable( tp_project_fiodorkolotilin
         main.cpp
         ${SOURCE_FILES}
 )
