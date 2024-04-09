@@ -20,10 +20,10 @@ MainMenu::MainMenu(Widget* widget) {
 void MainMenu::OnCreate() {
   QVBoxLayout* layout = new QVBoxLayout;
   layout->setAlignment(layout, Qt::AlignHCenter);
-  auto edit_text = new QTextEdit;
-  edit_text->setText("enter something");
-  edit_text->setMaximumSize(400, 100);
-  layout->addWidget(edit_text, 0, Qt::AlignHCenter);
+//  auto edit_text = new QTextEdit;
+//  edit_text->setText("enter something");
+//  edit_text->setMaximumSize(400, 100);
+//  layout->addWidget(edit_text, 0, Qt::AlignHCenter);
   play_button.SetText("Play");
   play_button.SetAction([this]{
     PlayMenu* play_menu = new PlayMenu;

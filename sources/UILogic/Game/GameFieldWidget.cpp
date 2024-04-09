@@ -73,6 +73,7 @@ void GameFieldWidget::OnCreate() {
 
 void GameFieldWidget::mousePressEvent(QMouseEvent* event) {
   field.Click(event->x(), event->y());
+  this->repaint();
 //  for (int i = 0; i < polygons.size(); i++) {
 //    if (click_polygons[i].containsPoint(event->pos(), Qt::FillRule::WindingFill)) {
 //      std::cerr << "click" << " " << struct_vector[i].first.GetTypeString() << '\n';

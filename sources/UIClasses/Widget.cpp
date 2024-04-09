@@ -83,6 +83,11 @@ void Widget::ChangeWidget(Widget* prev, Widget* next) {
   auto pointer = (prev->parentWidget()->layout()->replaceWidget(prev, next));
   pointer->widget()->deleteLater();
 }
+void Widget::ChangeWidget(QWidget* prev, QWidget* next) {
+  auto pointer = (prev->parentWidget()->layout()->replaceWidget(prev, next));
+  pointer->widget()->deleteLater();
+}
+
 
 void Widget::ChangeWidget(Widget* next) {
   ChangeWidget(this, next);

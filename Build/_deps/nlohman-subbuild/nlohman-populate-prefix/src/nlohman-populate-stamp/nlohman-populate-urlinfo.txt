@@ -1,0 +1,12 @@
+# This is a generated file and its contents are an internal implementation detail.
+# The download step will be re-executed if anything in this file changes.
+# No other meaning or use of this file is supported.
+
+method=url
+command=/usr/local/lib/python3.10/dist-packages/cmake/data/bin/cmake;-P;/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/Build/_deps/nlohman-subbuild/nlohman-populate-prefix/src/nlohman-populate-stamp/download-nlohman-populate.cmake;COMMAND;/usr/local/lib/python3.10/dist-packages/cmake/data/bin/cmake;-P;/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/Build/_deps/nlohman-subbuild/nlohman-populate-prefix/src/nlohman-populate-stamp/verify-nlohman-populate.cmake;COMMAND;/usr/local/lib/python3.10/dist-packages/cmake/data/bin/cmake;-P;/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/Build/_deps/nlohman-subbuild/nlohman-populate-prefix/src/nlohman-populate-stamp/extract-nlohman-populate.cmake
+source_dir=/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/Build/_deps/nlohman-src
+work_dir=/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/Build/_deps
+url(s)=https://github.com/nlohmann/json/releases/download/v3.11.3/json.tar.xz
+hash=
+no_extract=
+

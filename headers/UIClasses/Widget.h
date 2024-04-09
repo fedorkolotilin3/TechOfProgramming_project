@@ -35,6 +35,7 @@ class Widget : /*public View,*/ public QWidget {
   void SetLayout(QLayout* layout);
   QLayout* GetLayout();
   static void ChangeWidget(Widget* prev, Widget* next);
+  static void ChangeWidget(QWidget* prev, QWidget* next);
   void ChangeWidget(Widget* next);
 };
 

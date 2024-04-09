@@ -1,4 +1,3 @@
-
 #ifndef TP_PROJECT_FIODORKOLOTILIN_HEADERS_MODEL_GAME_GAMEFIELD_H_
 #define TP_PROJECT_FIODORKOLOTILIN_HEADERS_MODEL_GAME_GAMEFIELD_H_
 
@@ -6,6 +5,7 @@
 #include "FieldStructure.h"
 #include "HexView.h"
 #include "VertexView.h"
+#include "EdgeView.h"
 
 class GameField {
   inline static Point vec_x = {0.5, sqrt(3) / 2};
@@ -15,9 +15,12 @@ class GameField {
   int center_y = 370;
   int scale = 20;
   double split_k = 1.05;
-  double clickable_polygon_k = 0.6;
+  double clickable_hex_s = 0.6;
+  double clickable_ver_s = 1;
+  double clickable_edge_s = 0.4;
   std::vector<HexView> hexes;
   std::vector<VertexView> vertices;
+  std::vector<EdgeView> edges;
   std::vector<std::pair<Hex, std::pair<int, int>>> struct_vector;
   void ConstructField();
  public:

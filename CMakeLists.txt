@@ -13,6 +13,11 @@ find_package(Qt5 COMPONENTS
         Widgets
         REQUIRED)
 
+include(FetchContent)
+
+FetchContent_Declare(nlohman URL https://github.com/nlohmann/json/releases/download/v3.11.3/json.tar.xz)
+FetchContent_MakeAvailable(nlohman)
+
 
 set(H_UICLASSES_PATH headers/UIClasses)
 set(H_UILOGIC_PATH headers/UILogic)
@@ -40,9 +45,15 @@ set(HEADER_FILES
         headers/Model/Game/Hex.h
         headers/UILogic/Game/TutorialWidget.h
         headers/my_geometry.h
-        headers/Model/Game/HexView.h
-        headers/Model/Game/VertexView.h
-        headers/Model/Game/EdgeView.h
+        headers/UILogic/Game/HexView.h
+        headers/UILogic/Game/VertexView.h
+        headers/UILogic/Game/EdgeView.h
+        headers/Model/Game/Room.h
+        headers/UILogic/Hub/RoomChooseMenu.h
+        headers/UIClasses/RoomItem.h
+        sources/UILogic/Hub/RoomChooseMenu.cpp
+        headers/Model/DataTypes/RoomFile.h
+        headers/UIClasses/ScrollArea.h
 )
 set(SOURCE_FILES
         ${S_UICLASSES_PATH}/View.cpp
@@ -64,18 +75,30 @@ set(SOURCE_FILES
         sources/Model/Game/Hex.cpp
         sources/UILogic/Game/TutorialWidget.cpp
         sources/Model/Game/GameField.cpp
-        sources/Model/Game/VertexView.cpp
+        sources/UILogic/Game/VertexView.cpp
         sources/Model/my_geometry.cpp
-        sources/Model/Game/EdgeView.cpp
-        sources/Model/Game/HexView.cpp
+        sources/UILogic/Game/EdgeView.cpp
+        sources/UILogic/Game/HexView.cpp
+        sources/Model/Game/Room.cpp
+        sources/UIClasses/RoomItem.cpp
+        sources/Model/DataTypes/RoomFile.cpp
+        sources/UILogic/Hub/RoomChooseMenu.cpp
+        sources/UIClasses/ScrollArea.cpp
 )
 add_executable( tp_project_fiodorkolotilin
         main.cpp
         ${SOURCE_FILES}
+        ${HEADER_FILES}
 )
 
-add_library(sources_lib ${SOURCES_FILES})
-add_library(headers_lib ${HEADER_FILES})
+#add_library(sources_lib ${SOURCES_FILES})
+#add_library(headers_lib ${HEADER_FILES})
+#set(RAPID_XML_PATH rapidxml-1.13)
+#set(RAPID_XML
+#        RAPID_XML_PATH/rapidxml.hpp
+#        RAPID_XML_PATH/rapidxml_print.hpp
+#)
+#add_library(rapid_xml RAPID_XML_PATH/)
 
 target_include_directories(tp_project_fiodorkolotilin PUBLIC
         rapidxml-1.13
@@ -99,46 +122,51 @@ target_include_directories(tp_project_fiodorkolotilin PUBLIC
         sources/UILogic/
 )
 
-target_include_directories(sources_lib PUBLIC
-        headers
-        headers/UIClasses
-        headers/Model
-        headers/UILogic/Hub
-        headers/UILogic/Game
-        sources
-        sources/UIClasses
-        sources/Model
-        sources/UILogic/Hub
-        sources/UILogic/Game
-)
-target_include_directories(headers_lib PUBLIC
-        headers
-        headers/UIClasses
-        headers/Model
-        headers/Model/AppData
-        headers/Model/Game
-        headers/Model/DataTypes
-        headers/UILogic/Hub
-        headers/UILogic/Game
-        sources
-        sources/UIClasses
-        sources/Model
-        sources/Model/AppData
-        sources/Model/Game
-        sources/Model/DataTypes
-        sources/UILogic/Hub
-        sources/UILogic/Game
+#target_include_directories(sources_lib PUBLIC
+#        headers
+#        headers/UIClasses
+#        headers/Model
+#        headers/UILogic/Hub
+#        headers/UILogic/Game
+#        sources
+#        sources/UIClasses
+#        sources/Model
+#        sources/UILogic/Hub
+#        sources/UILogic/Game
+#)
+#target_include_directories(headers_lib PUBLIC
+#        headers
+#        headers/UIClasses
+#        headers/Model
+#        headers/Model/AppData
+#        headers/Model/Game
+#        headers/Model/DataTypes
+#        headers/UILogic/Hub
+#        headers/UILogic/Game
+#        sources
+#        sources/UIClasses
+#        sources/Model
+#        sources/Model/AppData
+#        sources/Model/Game
+#        sources/Model/DataTypes
+#        sources/UILogic/Hub
+#        sources/UILogic/Game
+#)
+
+target_link_libraries(tp_project_fiodorkolotilin PRIVATE
+        nlohmann_json::nlohmann_json
+        Qt5::Core
+        Qt5::Gui
+        Qt5::Widgets
+#        sources_lib
+#        headers_lib
+#        rapid_xml
 )
 
-target_link_libraries(tp_project_fiodorkolotilin
-        Qt5::Core
-        Qt5::Gui
-        Qt5::Widgets
-        sources_lib
-        headers_lib
-)
-target_link_libraries(headers_lib
-        Qt5::Core
-        Qt5::Gui
-        Qt5::Widgets
-)
+#target_link_libraries(foo PRIVATE nlohmann_json::nlohmann_json)
+#target_link_libraries(headers_lib PRIVATE
+#        nlohmann_json::nlohmann_json
+#        Qt5::Core
+#        Qt5::Gui
+#        Qt5::Widgets
+#)

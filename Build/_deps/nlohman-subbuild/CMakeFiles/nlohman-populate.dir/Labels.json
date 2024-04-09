@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/Build/_deps/nlohman-subbuild/CMakeFiles/nlohman-populate"
+		},
+		{
+			"file" : "/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/Build/_deps/nlohman-subbuild/CMakeFiles/nlohman-populate.rule"
+		},
+		{
+			"file" : "/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/Build/_deps/nlohman-subbuild/CMakeFiles/nlohman-populate-complete.rule"
+		},
+		{
+			"file" : "/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/Build/_deps/nlohman-subbuild/nlohman-populate-prefix/src/nlohman-populate-stamp/nlohman-populate-build.rule"
+		},
+		{
+			"file" : "/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/Build/_deps/nlohman-subbuild/nlohman-populate-prefix/src/nlohman-populate-stamp/nlohman-populate-configure.rule"
+		},
+		{
+			"file" : "/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/Build/_deps/nlohman-subbuild/nlohman-populate-prefix/src/nlohman-populate-stamp/nlohman-populate-download.rule"
+		},
+		{
+			"file" : "/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/Build/_deps/nlohman-subbuild/nlohman-populate-prefix/src/nlohman-populate-stamp/nlohman-populate-install.rule"
+		},
+		{
+			"file" : "/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/Build/_deps/nlohman-subbuild/nlohman-populate-prefix/src/nlohman-populate-stamp/nlohman-populate-mkdir.rule"
+		},
+		{
+			"file" : "/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/Build/_deps/nlohman-subbuild/nlohman-populate-prefix/src/nlohman-populate-stamp/nlohman-populate-patch.rule"
+		},
+		{
+			"file" : "/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/Build/_deps/nlohman-subbuild/nlohman-populate-prefix/src/nlohman-populate-stamp/nlohman-populate-test.rule"
+		},
+		{
+			"file" : "/home/fedorkolotilin/TP_Project/tp_project_fiodorkolotilin/Build/_deps/nlohman-subbuild/nlohman-populate-prefix/src/nlohman-populate-stamp/nlohman-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"nlohman-populate"
+		],
+		"name" : "nlohman-populate"
+	}
+}

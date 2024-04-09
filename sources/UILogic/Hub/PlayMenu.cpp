@@ -9,6 +9,7 @@
 #include "MainMenu.h"
 #include "TutorialActivity.h"
 #include "Application.h"
+#include "RoomChooseMenu.h"
 
 Widget* LocalGameWidgetCreate() {
   auto widget = new Widget();
@@ -19,6 +20,10 @@ Widget* LocalGameWidgetCreate() {
   widget_label->setText("local game:");
   widget_create->SetText("create game");
   widget_join->SetText("join game");
+  widget_join->SetAction([widget] () -> void {
+    auto room_choose_menu = new RoomChooseMenu;
+    Widget::ChangeWidget(widget->parentWidget()->layout()->parentWidget(), room_choose_menu);
+  });
   widget->layout()->addWidget(widget_label);
   widget->layout()->addItem(new QSpacerItem(30, 0));
   widget->layout()->addWidget(widget_create->GetSelfButton());
@@ -35,6 +40,10 @@ Widget* GlobalGameWidgetCreate() {
   widget_label->setText("global game:");
   widget_create->SetText("create game");
   widget_join->SetText("join game");
+  widget_join->SetAction([widget] () -> void {
+    auto room_choose_menu = new RoomChooseMenu;
+    Widget::ChangeWidget(widget->parentWidget()->layout()->parentWidget(), room_choose_menu);
+  });
   widget->layout()->addWidget(widget_label);
   widget->layout()->addItem(new QSpacerItem(30, 0));
   widget->layout()->addWidget(widget_create->GetSelfButton());
@@ -45,21 +54,21 @@ Widget* GlobalGameWidgetCreate() {
 void PlayMenu::OnCreate() {
   auto layout = new QVBoxLayout(this);
   start_tutorial.SetText("start tutorial");
-  start_tutorial.SetAction([this]{
+  start_tutorial.SetAction([this] {
     auto tutorial_activity = new TutorialActivity;
     Application::AddWidget(tutorial_activity->GetContainer());
     tutorial_activity->Launch();
-    auto  parent = this->parentWidget()->layout()->parentWidget();
+    auto parent = this->parentWidget()->layout()->parentWidget();
     Application::DeleteWidget(parent);
     parent->deleteLater();
   });
   exit.SetText("exit");
-  exit.SetAction([this]{
+  exit.SetAction([this] {
     Widget::ChangeWidget(this, new MainMenu);
   });
   layout->addSpacing(200);
   layout->addWidget(start_tutorial.GetSelfButton(), 1, Qt::AlignHCenter);
-//  layout->addWidget(start_global_game.GetSelfButton(), 0, Qt::AlignHCenter);
+  //  layout->addWidget(start_global_game.GetSelfButton(), 0, Qt::AlignHCenter);
   layout->addWidget(LocalGameWidgetCreate(), 1, Qt::AlignHCenter);
   layout->addWidget(GlobalGameWidgetCreate(), 1, Qt::AlignHCenter);
   layout->addWidget(exit.GetSelfButton(), 1, Qt::AlignHCenter);
@@ -67,7 +76,7 @@ void PlayMenu::OnCreate() {
   layout->addSpacing(300);
 }
 
-PlayMenu::PlayMenu(){
+PlayMenu::PlayMenu() {
   OnCreate();
 }
 
