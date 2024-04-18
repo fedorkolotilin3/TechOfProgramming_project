@@ -84,6 +84,7 @@ set(SOURCE_FILES
         sources/Model/DataTypes/RoomFile.cpp
         sources/UILogic/Hub/RoomChooseMenu.cpp
         sources/UIClasses/ScrollArea.cpp
+        sources/UILogic/Game/GameMenuWidget.cpp
 )
 add_executable( tp_project_fiodorkolotilin
         main.cpp

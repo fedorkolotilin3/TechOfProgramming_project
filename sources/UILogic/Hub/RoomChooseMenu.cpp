@@ -32,11 +32,11 @@ void RoomChooseMenu::OnCreate() {
   auto end_widget_layout = new QHBoxLayout(end_widget);
   auto exit_button = new Button;
   auto enter_button = new Button;
-  exit_button->setText("Exit");
+  exit_button->SetText("Exit");
   exit_button->SetAction([this]() -> void {
     this->ChangeWidget(new PlayMenu());
   });
-  enter_button->setText("Enter");
+  enter_button->SetText("Enter");
   end_widget_layout->addWidget(exit_button->GetSelfButton());
   end_widget_layout->addWidget(enter_button->GetSelfButton());
   layout->addWidget(widget_list);

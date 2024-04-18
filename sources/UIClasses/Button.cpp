@@ -5,8 +5,8 @@
 
 void Button::SetText(std::string text) {
   QString q_text(text.data());
-//  this->orogin_button->setText(q_text);
-  this->setText(q_text);
+  //  this->orogin_button->setText(q_text);
+  button->setText(q_text);
 }
 //void Button::SetPosition(int x, int y) {
 //  //  this->move(position + this->start_vector);
@@ -22,13 +22,49 @@ void Button::SetText(std::string text) {
 //  this->SetRelative({-this->width() / 2, -this->height() / 2});
 //}
 Button::Button(Widget* parent) : Widget(parent) {
-  this->Button::QPushButton::setParent(dynamic_cast<Widget*>(this));
+  layout = new QVBoxLayout(this);
+  button = new QPushButton;
+  //  button->setGeometry(this->geometry());
+  layout->addWidget(button);
+  //  this->setStyleSheet("background: red");
+}
+Button::Button() : Widget() {
+  layout = new QVBoxLayout(this);
+  button = new QPushButton;
+  //  button->setGeometry(this->geometry());
+  layout->addWidget(button);
+  //  this->setStyleSheet("background: red");
 }
 
 Widget* Button::GetSelfWidget() {
-  return dynamic_cast<Widget*>(this);
+  return static_cast<Widget*>(this);
 }
 
 QPushButton* Button::GetSelfButton() {
-  return dynamic_cast<Button*>(this);
+  return button;
 }
+
+void Button::SetIconBFN(std::string file_path) {
+  QPixmap pixmap(file_path.data());
+  QIcon icon;
+  icon.addPixmap(pixmap, QIcon::Normal);
+  icon.addPixmap(pixmap, QIcon::Disabled);
+  SetIcon(icon);
+}
+
+void Button::SetIcon(QIcon& icon) {
+  button->setIcon(icon);
+}
+
+void Button::SetIconSize(int width, int height) {
+  button->setIconSize(QSize(width, height));
+}
+
+void Button::SetIconFullSize() {
+  button->setIconSize(this->GetSelfWidget()->size() * 0.5);
+}
+
+void Button::changeEvent(QEvent* event) {
+  QWidget::changeEvent(event);
+}
+
