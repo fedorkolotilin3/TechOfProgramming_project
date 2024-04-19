@@ -12,6 +12,7 @@ find_package(Qt5 COMPONENTS
         Gui
         Widgets
         REQUIRED)
+find_package(Qt5 REQUIRED COMPONENTS Network)
 
 include(FetchContent)
 
@@ -171,3 +172,5 @@ target_link_libraries(tp_project_fiodorkolotilin PRIVATE
 #        Qt5::Gui
 #        Qt5::Widgets
 #)
+
+target_link_libraries(tp_project_fiodorkolotilin PRIVATE Qt5::Network)

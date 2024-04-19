@@ -1,6 +1,9 @@
 #include <QtCore>
 #include <QtGui>
 #include <QtWidgets>
+#include <QUdpSocket>
+#include <QTcpSocket>
+#include <iostream>
 #include "StartActivity.h"
 #include "Application.h"
 #include "FieldStructure.h"
@@ -28,7 +31,7 @@ void GenerateRooms() {
   example.SetContent(room);
 }
 
-int main(int argc, char* argv[]) {
+int main1(int argc, char* argv[]) {
   QApplication app(argc, argv);
   Application::Init();
   auto start_activity = new StartActivity;
@@ -38,4 +41,25 @@ int main(int argc, char* argv[]) {
   SetField();
   GenerateRooms();
   return app.exec();
+}
+//class SocketListener : QObject {
+//  Q_OBJECT
+// public:
+//  QTcpSocket* socket;
+//  SocketListener(QTcpSocket* socket) : socket(socket){
+//  }
+// public slots:
+//  void onReadyRead() {
+//    QByteArray datas = socket->readAll();
+//    socket->write(QByteArray("ok !\n"));
+//  }
+//};
+void Print() {
+  std::cout << "Hello World\n";
+}
+int main() {
+  auto socket = new QTcpSocket();
+  socket->connectToHost(QHostAddress("127.0.0.1"), 4242);
+  QObject::connect(socket, &QTcpSocket::readyRead, [](){Print();});
+  socket->readyRead();
 }
