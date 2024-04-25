@@ -1,8 +1,11 @@
-//
-// Created by fedorkolotilin on 13.03.24.
-//
+#include "User.h"
 
-#ifndef TP_PROJECT_FIODORKOLOTILIN_HEADERS_MODEL_USER_H_
-#define TP_PROJECT_FIODORKOLOTILIN_HEADERS_MODEL_USER_H_
+User::User(const std::string &username) : username(username) {}
 
-#endif //TP_PROJECT_FIODORKOLOTILIN_HEADERS_MODEL_USER_H_
+const std::string &User::GetUsername() const {
+  return username;
+}
+
+void User::SetUsername(const std::string &username) {
+  User::username = username;
+}

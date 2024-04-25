@@ -55,6 +55,13 @@ set(HEADER_FILES
         sources/UILogic/Hub/RoomChooseMenu.cpp
         headers/Model/DataTypes/RoomFile.h
         headers/UIClasses/ScrollArea.h
+        headers/UILogic/Game/RoomWidget.h
+        headers/UILogic/Game/ChatWidget.h
+        headers/Model/User.h
+        headers/Model/DataTypes/Message.h
+        headers/UIClasses/EditTextWidget.h
+        headers/Network/GameServer.h
+        headers/Network/GameClient.h
 )
 set(SOURCE_FILES
         ${S_UICLASSES_PATH}/View.cpp
@@ -86,6 +93,13 @@ set(SOURCE_FILES
         sources/UILogic/Hub/RoomChooseMenu.cpp
         sources/UIClasses/ScrollArea.cpp
         sources/UILogic/Game/GameMenuWidget.cpp
+        sources/UILogic/Game/RoomWidget.cpp
+        sources/UILogic/Game/ChatWidget.cpp
+        sources/Model/DataTypes/Message.cpp
+        sources/Model/User.cpp
+        sources/UIClasses/EditTextWidget.cpp
+        sources/Network/GameServer.cpp
+        sources/Network/GameClient.cpp
 )
 add_executable( tp_project_fiodorkolotilin
         main.cpp
@@ -105,6 +119,7 @@ add_executable( tp_project_fiodorkolotilin
 target_include_directories(tp_project_fiodorkolotilin PUBLIC
         rapidxml-1.13
         headers
+        headers/Network
         headers/UIClasses
         headers/Model
         headers/Model/AppData
@@ -114,6 +129,7 @@ target_include_directories(tp_project_fiodorkolotilin PUBLIC
         headers/UILogic/Game
         headers/UILogic/
         sources
+        sources/Network
         sources/UIClasses
         sources/Model
         sources/Model/DataTypes

@@ -6,6 +6,9 @@
 #include "Button.h"
 #include "ScrollArea.h"
 #include "GameMenuWidget.h"
+#include "Message.h"
+#include "User.h"
+#include "ChatWidget.h"
 
 void TutorialWidget::OnCreate() {
   //  scrollArea->setBackgroundRole(QPalette::Dark);
@@ -30,7 +33,13 @@ void TutorialWidget::OnCreate() {
   auto layout = new QGridLayout(container);
   auto fieldWidget = new GameFieldWidget;
   layout->addWidget(fieldWidget, 0, 0, 6, 6);
-  auto text1 = new TextWidget("other players && chat");
+//  auto text1 = new TextWidget("other players && chat");
+
+  User test_user("test_user");
+  Message test_message("test_message", test_user);
+  std::vector<Message> msgs(40, test_message);
+  auto chat_widget = new ChatWidget(msgs);
+
   auto text2 = new TextWidget("your buildings and actions");
   auto text3 = new TextWidget("your info such as resources count");
   auto button = new Button();
@@ -40,10 +49,10 @@ void TutorialWidget::OnCreate() {
     fieldWidget->field = GameField(fieldWidget->x() + fieldWidget->width() / 2, fieldWidget->y() + fieldWidget->height() / 2);
     fieldWidget->repaint();
   });
-  text1->setFrameStyle(QFrame::Panel | QFrame::Raised);
+//  chat_widget->setFrameStyle(QFrame::Panel | QFrame::Raised);
   text2->setFrameStyle(QFrame::Panel | QFrame::Raised);
   text3->setFrameStyle(QFrame::Panel | QFrame::Raised);
-  layout->addWidget(text1,0, 6, 5, 1, Qt::AlignCenter);
+  layout->addWidget(chat_widget,0, 6, 5, 1, Qt::AlignCenter);
   layout->addWidget(text2, 6,  0, 1, 6, Qt::AlignCenter);
   layout->addWidget(text3,6, 6, Qt::AlignCenter);
   layout->addWidget(button, 5, 6, Qt::AlignCenter);

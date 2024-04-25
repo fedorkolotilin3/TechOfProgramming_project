@@ -5,6 +5,7 @@
 #include "RoomFile.h"
 #include "MainMenu.h"
 #include "PlayMenu.h"
+#include "RoomWidget.h"
 
 RoomChooseMenu::RoomChooseMenu() : Widget() {
   OnCreate();
@@ -37,6 +38,9 @@ void RoomChooseMenu::OnCreate() {
     this->ChangeWidget(new PlayMenu());
   });
   enter_button->SetText("Enter");
+  enter_button->SetAction([this]() -> void {
+    this->ChangeWidget(new RoomWidget());
+  });
   end_widget_layout->addWidget(exit_button->GetSelfButton());
   end_widget_layout->addWidget(enter_button->GetSelfButton());
   layout->addWidget(widget_list);

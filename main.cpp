@@ -9,6 +9,9 @@
 #include "FieldStructure.h"
 #include "Room.h"
 #include "RoomFile.h"
+#include "GameServer.h"
+#include "Player.h"
+#include "GameClient.h"
 
 void SetField() {
   FieldStructure f("Data/test_field.xml");
@@ -31,7 +34,7 @@ void GenerateRooms() {
   example.SetContent(room);
 }
 
-int main1(int argc, char* argv[]) {
+int main(int argc, char* argv[]) {
   QApplication app(argc, argv);
   Application::Init();
   auto start_activity = new StartActivity;
@@ -42,24 +45,15 @@ int main1(int argc, char* argv[]) {
   GenerateRooms();
   return app.exec();
 }
-//class SocketListener : QObject {
-//  Q_OBJECT
-// public:
-//  QTcpSocket* socket;
-//  SocketListener(QTcpSocket* socket) : socket(socket){
-//  }
-// public slots:
-//  void onReadyRead() {
-//    QByteArray datas = socket->readAll();
-//    socket->write(QByteArray("ok !\n"));
-//  }
-//};
-void Print() {
-  std::cout << "Hello World\n";
-}
-int main() {
-  auto socket = new QTcpSocket();
-  socket->connectToHost(QHostAddress("127.0.0.1"), 4242);
-  QObject::connect(socket, &QTcpSocket::readyRead, [](){Print();});
-  socket->readyRead();
+
+int main1(int argc, char* argv[]) {
+  std::string arg1 = argv[1];
+  if (arg1 == std::string("client")) {
+    GameClient client;
+    client.ListenRooms();
+  }
+  else {
+    GameServer server;
+    server.StartFindingPlayers(argv[2]);
+  }
 }

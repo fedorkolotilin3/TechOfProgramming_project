@@ -10,3 +10,7 @@ TextWidget::TextWidget(std::string string) : QLabel(string.data()){
 
 }
 
+TextWidget::TextWidget(std::string string, QWidget* widget) : QLabel(string.data(), widget){
+
+}
+
