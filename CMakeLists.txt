@@ -62,6 +62,7 @@ set(HEADER_FILES
         headers/UIClasses/EditTextWidget.h
         headers/Network/GameServer.h
         headers/Network/GameClient.h
+        headers/UILogic/Hub/TestConnect.h
 )
 set(SOURCE_FILES
         ${S_UICLASSES_PATH}/View.cpp
@@ -100,6 +101,7 @@ set(SOURCE_FILES
         sources/UIClasses/EditTextWidget.cpp
         sources/Network/GameServer.cpp
         sources/Network/GameClient.cpp
+        sources/UILogic/Hub/TestConnect.cpp
 )
 add_executable( tp_project_fiodorkolotilin
         main.cpp

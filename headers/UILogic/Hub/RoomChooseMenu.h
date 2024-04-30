@@ -19,6 +19,11 @@ class RoomChooseMenu : public Widget {
   RoomChooseMenu();
   RoomChooseMenu(Widget* widget);
   void OnCreate();
+ public slots:
+  void AddRoom(QString room);
+  void DeleteRoom(QString room);
+//  void AddRoom();
+//  void DeleteRoom();
 };
 
 #endif //TP_PROJECT_FIODORKOLOTILIN_UILOGIC_GLOBALGAMEFINDMENU_H_

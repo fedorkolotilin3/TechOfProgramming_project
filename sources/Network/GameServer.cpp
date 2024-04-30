@@ -9,13 +9,13 @@
 
 void GameServer::StartFindingPlayers(std::string str = "") {
   class PlayerFinder {
-    std::string room_name;
+    Room* room;
 //    int sock;
    public:
 //    explicit PlayerFinder(int sock) : sock(sock) {}
     PlayerFinder() {}
 
-    explicit PlayerFinder(const std::string &room_name) : room_name(room_name) {}
+    explicit PlayerFinder(Room* room) : room(room) {}
 
     void SendMessages() {
       while (true) {
@@ -44,7 +44,7 @@ void GameServer::StartFindingPlayers(std::string str = "") {
           exit(1);
         }
 
-        std::string msg = "room " + room_name;
+        std::string msg = room->to_json();
         numbytes = sendto(sockfd, msg.data(), msg.size(), 0,
                                p->ai_addr, p->ai_addrlen);
 
@@ -54,6 +54,8 @@ void GameServer::StartFindingPlayers(std::string str = "") {
       }
     }
   };
-  std::thread Finding(&PlayerFinder::SendMessages, PlayerFinder(str));
+  std::thread Finding(&PlayerFinder::SendMessages, PlayerFinder(&serv_room));
   Finding.join();
 }
+
+GameServer::GameServer(const Room &serv_room) : serv_room(serv_room) {}

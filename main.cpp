@@ -46,14 +46,14 @@ int main(int argc, char* argv[]) {
   return app.exec();
 }
 
-int main1(int argc, char* argv[]) {
-  std::string arg1 = argv[1];
-  if (arg1 == std::string("client")) {
-    GameClient client;
-    client.ListenRooms();
-  }
-  else {
-    GameServer server;
-    server.StartFindingPlayers(argv[2]);
-  }
-}
+//int main1(int argc, char* argv[]) {
+//  std::string arg1 = argv[1];
+//  if (arg1 == std::string("client")) {
+//    GameClient client;
+//    client.ListenRooms();
+//  }
+//  else {
+//    GameServer server;
+//    server.StartFindingPlayers(argv[2]);
+//  }
+//}
