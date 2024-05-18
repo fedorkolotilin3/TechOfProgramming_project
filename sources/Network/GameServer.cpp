@@ -55,7 +55,7 @@ void GameServer::StartFindingPlayers(std::string str = "") {
     }
   };
   std::thread Finding(&PlayerFinder::SendMessages, PlayerFinder(&serv_room));
-  Finding.join();
+  Finding.detach();
 }
 
 GameServer::GameServer(const Room &serv_room) : serv_room(serv_room) {}

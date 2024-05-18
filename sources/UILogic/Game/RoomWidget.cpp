@@ -1,5 +1,6 @@
 #include "RoomWidget.h"
 #include "ChatWidget.h"
+#include "GameServer.h"
 
 RoomWidget::RoomWidget() : Widget() {
   OnCreate();
@@ -18,4 +19,7 @@ void RoomWidget::OnCreate() {
   auto chat_widget = new ChatWidget(msgs);
   chat_widget->setFixedSize(600, 900);
   hor_layout.addWidget(chat_widget, 0, Qt::AlignCenter);
+  Room room = Room("room name", 1, test_user.GetUsername());
+  auto server = new GameServer(room);
+  server->StartFindingPlayers("msg");
 }
